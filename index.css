@@ -29,6 +29,7 @@ a{
     display: inline-block;
     line-height: 1.5;
     color: var(--second-color);
+    height: fit-content;
 }
 @media(max-width:767px){
     .before-header{
@@ -181,12 +182,12 @@ header .nav-item:hover a:not(.no-hov),.dropdown-toggle:hover i{
 }
 .ser-card{
     background-color: var(--card-bg);
-    transition: all .5s;
+    transition: all .3s;
     width: 100%;
     height: auto;
 }
 .ser-card:hover{
-    margin-top: -10px;
+    margin-top: -10px !important;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .08);
 }
 .icon-ser i{
@@ -219,7 +220,14 @@ header .nav-item:hover a:not(.no-hov),.dropdown-toggle:hover i{
     font-size: 16px;
     color: var(--main-color);
 }
+/* end customize services */
 
+
+/* start customize feature section */
+.text-feature{
+    background-color: var(--main-color);
+}
+/* end customize feature section */
 
 
 
