@@ -153,7 +153,7 @@ header .nav-item:hover a:not(.no-hov),.dropdown-toggle:hover i{
 .about-text p{
     color: var(--second-color);
 }
-.fa-check{
+.about .fa-check{
     width: 15px;
     height: 15px;
     line-height: 1.2;
@@ -162,6 +162,7 @@ header .nav-item:hover a:not(.no-hov),.dropdown-toggle:hover i{
     color: var(--main-color);
     border: 1.5px solid var(--main-color);
     font-size: 10px;
+    padding: 2px;
 }
 .read a {
     padding: 20px 50px;
@@ -208,6 +209,14 @@ header .nav-item:hover a:not(.no-hov),.dropdown-toggle:hover i{
 }
 .read-ser {
     align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    transition: all .5s ;
 }
 .read-ser i{
     width: 30px;
@@ -220,13 +229,63 @@ header .nav-item:hover a:not(.no-hov),.dropdown-toggle:hover i{
     font-size: 16px;
     color: var(--main-color);
 }
+.ser-card:hover .read-ser{
+    width: 140px;
+    border-radius: 30px;
+}
 /* end customize services */
 
 
 /* start customize feature section */
-.text-feature{
+.all-cont-txt{
     background-color: var(--main-color);
+    padding: 5rem 0 5rem 10rem;
 }
+.text-feature{
+    padding: 5rem 3rem 5rem 0;
+}
+.feature span.style-sec{
+    color: #fff;
+}
+.text-feature h2{
+    font-size: 55px;
+    font-weight: bold;
+    color: #fff;
+}
+.text-feature p{
+    font-size: 25px;
+    color: #fff;
+}
+.feature .items{
+    align-items: center;
+}
+.item-i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-i i{
+    color: var(--main-color);
+    font-size: 25px;
+}
+.item-text{
+    color: #fff;
+}
+.item-text span{
+    font-size: 20px;
+}
+.item-text h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* .feature .feature-image{
+    min-height: 400px;
+} */
 /* end customize feature section */
 
 
@@ -254,6 +313,19 @@ header .nav-item:hover a:not(.no-hov),.dropdown-toggle:hover i{
     }
     .title-sec h2{
         font-size: 35px;
+    }
+    .all-cont-txt{
+        background-color: var(--main-color);
+        padding: 1rem !important;
+    }
+    .text-feature{
+        padding: 1rem !important;
+    }
+    .text-feature h2 {
+        font-size: 35px;
+    }
+    .text-feature p {
+        font-size: 17px;
     }
 }
 /* end customize media */
