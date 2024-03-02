@@ -357,6 +357,22 @@ i.style-i {
     border: none;
     margin-bottom: 10px;
 }
+form > div * {
+    width: 49%;
+}
+textarea,form .btn-form button{
+    width: 98%;
+}
+form .btn-form{
+    text-align: center;
+}
+form .btn-form button{
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background: var(--main-color);
+    border-radius: 5px;
+}
 /* end customize appointment section  */
 
 
@@ -400,6 +416,12 @@ i.style-i {
     }
     .text-feature p {
         font-size: 17px;
+    }
+    .text-appoint h2{
+        font-size: 30px;
+    }
+    .the-same{
+        width: 100% !important;
     }
 }
 /* end customize media */
