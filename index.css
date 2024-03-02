@@ -317,7 +317,7 @@ i.style-i {
     margin-top: -60px;
 }
 .item-doc:hover .team-social i{
-    opacity: 1;
+    opacity: 1 !important;
 }
 /* end customize doctor section */
 
@@ -375,8 +375,134 @@ form .btn-form button{
 }
 /* end customize appointment section  */
 
+/* start customize testemonials */
+.testemonials .carousel-item{
+    text-align: center;
+    margin: 0;
+    width: 50%;
+}
+.testemonials .carousel-inner {
+    display: flex;
+    justify-content: center;
+}
+.testemonials .carousel-item .comment{
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 15px;
+}
+.comment p,.comment span{
+    font-size: 20px;
+}
+.comment h4{
+    font-size: 25px;
+    font-weight: bold;
+}
+.testemonials .carousel-item img{
+    border-radius: 50%;
+    border: 10px solid;
+    text-align: center;
+    margin: 0 auto 2rem auto;
 
+}
+.testemonials span.carousel-control-prev-icon,.testemonials span.carousel-control-next-icon{
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+/* end customize testemonials */
 
+/* start customize footer */
+.page-footer{
+    padding: 2rem 8rem;
+    margin-top: 3rem;
+    color: #fff;
+    background: var(--heading-color);
+}
+.top-footer{
+    padding: 5rem 0;
+}
+.page-footer .column ul{
+    padding: 0;
+}
+.title-foot{
+    margin-bottom: 1rem;
+}
+.page-footer .column li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.page-footer .column li h4{
+    margin: 0;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+.page-footer .column li i{
+    margin-right: 1rem;
+    transition: all .3s ease-in-out;
+}
+.page-footer .column ul.hov-foot li:hover h4{
+    color: var(--main-color);
+    font-size: 22px;
+}
+.page-footer .column ul.hov-foot li:hover i{
+    color: var(--main-color);
+}
+.form-mail{
+    position: relative;
+}
+.form-mail input {
+    border: none;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 25px;
+}
+.form-mail button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: none;
+    background: var(--main-color);
+    color: white;
+    font-size: 20px;
+}
+.text-4{
+    font-size: 1.25rem;
+}
+.pre-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 5rem 0 0;
+    border-top: 1px solid #ffffff1a;
+}
+.pre-footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+.pre-footer a:hover {
+    color: var(--main-color);
+}
+.social-foot i {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 2.5;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 0 2px;
+    transition: all .3s ease-in-out;
+}
+.social-foot i:hover{
+    background-color: #fff;
+    color: var(--main-color);
+}
+/* end customize footer */
 
 
 
@@ -402,7 +528,7 @@ form .btn-form button{
         font-size: 28px;
     }
     .title-sec h2{
-        font-size: 35px;
+        font-size: 30px;
     }
     .all-cont-txt{
         background-color: var(--main-color);
@@ -422,6 +548,16 @@ form .btn-form button{
     }
     .the-same{
         width: 100% !important;
+    }
+    .testemonials .carousel-item {
+        width: 100%;
+    }
+    .page-footer{
+        padding: 2rem 1rem !important;
+    }
+    .pre-footer{
+        flex-direction: column;
+        align-items: center;
     }
 }
 /* end customize media */
