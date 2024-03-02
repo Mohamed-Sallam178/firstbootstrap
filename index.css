@@ -11,6 +11,7 @@ body{
     --second-color:#8d8e92;
     --heading-color:#1b2c51;
     --card-bg:#EFF5FF;
+    --item-bg:#eff5ff;
 }
 li{
     list-style: none;
@@ -239,10 +240,12 @@ header .nav-item:hover a:not(.no-hov),.dropdown-toggle:hover i{
 /* start customize feature section */
 .all-cont-txt{
     background-color: var(--main-color);
-    padding: 5rem 0 5rem 10rem;
+    padding: 5rem 0 5rem 0;
+    padding-left: calc(((100% - 1320px) / 2) + 0.75rem);
 }
 .text-feature{
     padding: 5rem 3rem 5rem 0;
+    color: #fff;
 }
 .feature span.style-sec{
     color: #fff;
@@ -252,21 +255,18 @@ header .nav-item:hover a:not(.no-hov),.dropdown-toggle:hover i{
     font-weight: bold;
     color: #fff;
 }
-.text-feature p{
-    font-size: 25px;
-    color: #fff;
-}
 .feature .items{
     align-items: center;
 }
 .item-i{
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 .item-i i{
     color: var(--main-color);
@@ -275,19 +275,51 @@ header .nav-item:hover a:not(.no-hov),.dropdown-toggle:hover i{
 .item-text{
     color: #fff;
 }
-.item-text span{
-    font-size: 20px;
-}
-.item-text h3{
-    font-size: 25px;
+.item-text h5{
+    font-size: 18px;
     font-weight: bold;
 }
 
-/* .feature .feature-image{
-    min-height: 400px;
-} */
 /* end customize feature section */
 
+/* start customize doctor section */
+.item-doc,.team-details{
+    overflow: hidden;
+}
+.team-details{
+    background-color: var(--item-bg);
+    height: 100px;
+    transition: all .6s;
+}
+.team-details h5{
+    color: var(--heading-color);
+}
+.team-details p{
+    color: var(--main-color);
+}
+.team-social i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: var(--main-color);
+    text-align: center;
+    line-height: 2.4;
+    opacity: 0;
+    transition: all .6s;
+}
+.team-social i:hover{
+    color: #fff;
+    background-color: var(--main-color);
+}
+.item-doc:hover .team-details{
+    height: 160px !important;
+    margin-top: -60px;
+}
+.item-doc:hover .team-social i{
+    opacity: 1;
+}
+/* end customize doctor section */
 
 
 /* start customize media */
