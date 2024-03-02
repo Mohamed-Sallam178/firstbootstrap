@@ -447,7 +447,7 @@
         <div class="container">
             <div class="row-appoint d-flex w-100">
                 <div class="d-flex col-lg-6 col-sm-12 px-3">
-                    <div class="text-appoint flex-column p-3">
+                    <div class="text-appoint flex-column">
                         <span class="style-sec">Appointment</span>
                         <h2>Make An Appointment To Visit Our Doctor</h2>
                         <p class="mb-4">
@@ -462,7 +462,7 @@
                                 <h4 class="m-0">+012 345 6789</h4>
                             </div>
                         </div>
-                        <div class="contact-appoint p-5 mb-4 rounded-3">
+                        <div class="contact-appoint p-5 rounded-3">
                             <div class="icon-mail">
                                 <i class="style-i fa-solid fa-envelope "></i>
                             </div>
@@ -476,13 +476,25 @@
                 <div class="d-flex col-lg-6 col-sm-12 px-3">
                     <div class="form-appoint p-3">
                         <form action="">
-                            <input type="text" placeholder="Your Name">
-                            <input type="text" placeholder="Your Email">
-                            <input type="text" placeholder="Your Mobile">
-                            <select name="" id="" aria-placeholder="Choose Doctor"></select>
-                            <input type="date" placeholder="Choose Date">
-                            <input type="Time" placeholder="Choose Time">
-                            <textarea name="Describe your problem" id="" cols="30" rows="10"></textarea>
+                            <div>
+                                <input class="the-same" type="text" placeholder="Your Name">
+                                <input class="the-same" type="text" placeholder="Your Email">
+                            </div>
+                            <div>
+                                <input class="the-same" type="text" placeholder="Your Mobile">
+                                <!-- <input class="the-same" name="" id="" placeholder="Choose Doctor"> -->
+                                <select class="the-same" name="" id="">
+                                    <option selected>Choose Doctor</option>
+                                    <option value="1">Doctor 1</option>
+                                    <option value="2">Doctor 2</option>
+                                    <option value="3">Doctor 3</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input class="the-same" type="date" placeholder="Choose Date">
+                                <input class="the-same" type="Time" placeholder="Choose Time">
+                            </div>
+                            <textarea class="the-same" name="Describe your problem" id="" cols="30" rows="10"></textarea>
                             <button type="submit">Book Appointement</button>
                         </form>
                     </div>

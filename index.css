@@ -336,6 +336,7 @@ i.style-i {
 .contact-appoint{
     display: flex;
     align-items: center;
+    padding: 2rem 2rem 0 2rem;
 }
 .contact-appoint .style-i{
         width: 60px;
@@ -349,6 +350,12 @@ i.style-i {
 .contact-appoint .text-cont h4{
     color: var(--heading-color);
     font-weight: bold;
+}
+.the-same {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
 }
 /* end customize appointment section  */
 
