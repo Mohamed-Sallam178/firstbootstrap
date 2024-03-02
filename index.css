@@ -31,6 +31,7 @@ a{
     line-height: 1.5;
     color: var(--second-color);
     height: fit-content;
+    width: fit-content;
 }
 @media(max-width:767px){
     .before-header{
@@ -297,7 +298,7 @@ header .nav-item:hover a:not(.no-hov),.dropdown-toggle:hover i{
 .team-details p{
     color: var(--main-color);
 }
-.team-social i {
+i.style-i {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -305,7 +306,6 @@ header .nav-item:hover a:not(.no-hov),.dropdown-toggle:hover i{
     color: var(--main-color);
     text-align: center;
     line-height: 2.4;
-    opacity: 0;
     transition: all .6s;
 }
 .team-social i:hover{
@@ -320,6 +320,41 @@ header .nav-item:hover a:not(.no-hov),.dropdown-toggle:hover i{
     opacity: 1;
 }
 /* end customize doctor section */
+
+/* start customize appointment section  */
+.contact-appoint, .form-appoint{
+    background-color: var(--card-bg);
+}
+.text-appoint h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--heading-color);
+}
+.text-appoint p{
+    color: var(--second-color);
+}
+.contact-appoint{
+    display: flex;
+    align-items: center;
+}
+.contact-appoint .style-i{
+        width: 60px;
+        height: 60px;
+        line-height: 3;
+        font-size: 20px;
+}
+.contact-appoint .text-cont p{
+    color: var(--second-color);
+}
+.contact-appoint .text-cont h4{
+    color: var(--heading-color);
+    font-weight: bold;
+}
+/* end customize appointment section  */
+
+
+
+
 
 
 /* start customize media */
